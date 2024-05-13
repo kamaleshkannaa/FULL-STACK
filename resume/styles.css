@@ -1,0 +1,116 @@
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: ghostwhite;
+}
+
+header {
+  background-color: #060505;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.input-form,
+.preview {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.input-form{
+  background: linear-gradient(to right, #d4d4d4, #212497);
+}
+
+.preview{
+  background-color: ghostwhite;
+}
+
+.input-form input, .input-form textarea{
+  padding: 10px;
+  margin: 8px;
+  width: 50%;
+  max-width: 500px;
+  border-radius: 8px;
+  border: none;
+  background-color: #f5f1f1;
+}
+
+.skillsArea{
+  display: flex;
+  align-items: center;
+}
+.btn, .input-form input{
+  display: flex;
+}
+.achieve{
+  display: flex;
+  align-items: center;
+}
+.btn, .input-form input{
+  display: flex;
+}
+
+.hobbies{
+  display: flex;
+  align-items: center;
+}
+.btn, .input-form input{
+  display: flex;
+}
+
+button{
+  padding: 8px;
+  border-radius: 8px;
+  margin: 6px;
+  border: none;
+  background-color: #23af35;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+button:hover{
+  transform: scale(1.1);
+}
+
+#preview-content{
+  font-family:'Courier New', Courier, monospace;
+}
+
+
+label{
+  font-size: 18px;
+}
+
+hr{
+  border: 2px solid goldenrod;
+}
+
+@media print {
+  body {
+    visibility: hidden;
+    background-color: ghostwhite;
+    
+  }
+  #preview-content {
+    visibility: visible;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: none;
+    padding-left: 40px;
+    font-size: 25px;
+  }
+}
